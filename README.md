@@ -1,0 +1,1 @@
+# minimal-stock-recommendation
