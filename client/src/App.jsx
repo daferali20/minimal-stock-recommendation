@@ -6,7 +6,7 @@ function App() {
 
   const getRecommendation = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/recommend", { symbol: "AAPL" });
+     const res = await axios.post("https://stock-recommendation-server.onrender.com/recommend", { symbol: "AAPL" });
       setRecommendation(res.data.recommendation);
     } catch (error) {
       setRecommendation("حدث خطأ.");
